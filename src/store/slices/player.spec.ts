@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
-import { PlayerState, next, play, player as reducer } from './player'
+import { next, play, player as reducer } from './player'
+import { PlayerStateRedux } from '../../interfaces'
 
-const exampleState: PlayerState = {
+const exampleState: PlayerStateRedux = {
   course: {
     id: 1,
     modules: [

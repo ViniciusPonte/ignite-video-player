@@ -1,32 +1,9 @@
 import { PayloadAction, createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { useAppSelector } from '..'
 import { api } from '../../lib/axios'
+import { PlayerStateRedux } from '../../interfaces'
 
-interface Lesson {
-  id: string
-  title: string
-  duration: string
-}
-
-interface Module {
-  id: number
-  title: string
-  lessons: Lesson[]
-}
-
-interface Course {
-  id: number
-  modules: Module[]
-}
-
-export interface PlayerState {
-  currentModuleIndex: number
-  currentLessonIndex: number
-  course: Course | null
-  isLoading: boolean
-}
-
-const initialState: PlayerState = {
+const initialState: PlayerStateRedux = {
   currentModuleIndex: 0,
   currentLessonIndex: 0,
   course: null,
