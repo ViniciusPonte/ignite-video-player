@@ -1,27 +1,30 @@
-# React + TypeScript + Vite
+# Ignite - devstore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de player de video simples desenvolvido com Vite e estilizado com Tailwind CSS, e utiliza Redux E Zustand. Ele serve como um exemplo de como utilizar tanto o Redux com redux-toolkit e o Zustand.
 
-Currently, two official plugins are available:
+## Índice
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Capturas de Tela](#capturas-de-tela)
+- [Requisitos de Instalação](#requisitos-de-instalação)
 
-## Expanding the ESLint configuration
+## Capturas de Tela
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<div align="center">
+  <div style="display: flex; gap: 16px; align-items: center">
+   <img src="public/1.png" alt="" />
+  </div>
+</div>
 
-- Configure the top-level `parserOptions` property like this:
+## Requisitos de Instalação
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Para executar o projeto, siga os passos abaixo:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```bash
+1. Clone este repositório em sua máquina
+$ git clone https://github.com/ViniciusPonte/ignite-video-player.git
+
+2. Instale as dependencias
+$ npm i
+
+3. Rode o projeto através do comando:
+$ npm run dev
